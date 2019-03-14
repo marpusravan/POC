@@ -1,0 +1,47 @@
+.mic-animation-container{
+  position: absolute;
+  width: 106px;
+  height: 138px;
+  top: calc(50% - (138px / 2));
+  left: calc(50% - (106px / 2));
+  display: inline-block;
+  .bg{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    -webkit-animation: scale 1.5s ease 0s infinite normal ;
+    animation: scale 1.5s ease 0s infinite normal;
+  }
+  .icon{
+    position: absolute;
+    left: 50%;
+    bottom: calc(25% + 12.75px);
+    margin-left: -19px;
+    -webkit-animation: moveup 1.5s ease 0s infinite normal ;
+    animation: moveup 1.5s ease 0s infinite normal;
+  }
+}
+
+@-webkit-keyframes moveup {
+  100% {
+    bottom: calc(25% + 12.75px);
+  }
+  50% {
+    bottom: calc(25% + 12.75px);
+  }
+  0% {
+    bottom: 0px;
+  }
+}
+
+@-webkit-keyframes scale {
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+  50% {
+    transform: scaleX(1) scaleY(1);
+  }
+  0% {
+    transform: scaleX(0) scaleY(0);
+  }
+}
